@@ -3,18 +3,15 @@ package main
 import (
 	"errors"
 	"fmt"
-	"net/http"
-
-	"github.com/ee5cd7d5d/go_getting_started/controllers"
 )
 
 func main() {
-	//getting_started_lessons()
+	getting_started_lessons()
 	//port := 3000
 	//_, err := startWebServer(port, 2)
 	//fmt.Println(err)
-	controllers.RegisterControllers()
-	http.ListenAndServe(":3000", nil)
+	//controllers.RegisterControllers()
+	//http.ListenAndServe(":3000", nil)
 }
 
 func startWebServer(port, numberOfRetries int) (int, error) {
@@ -26,7 +23,8 @@ func startWebServer(port, numberOfRetries int) (int, error) {
 }
 
 func getting_started_lessons() {
-	vars_ptrs()
-	consts()
-	collections()
+	//vars_ptrs()
+	//consts()
+	//collections()
+	loops()
 }
